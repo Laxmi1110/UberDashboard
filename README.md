@@ -19,10 +19,10 @@ The report has three pages:
 ## 📸 Screenshots
 
 ### Overview
-![Overview](images/overview.png)
+![Overview](dash2.png)
 
 ### Booking & Operational Analysis
-![Booking & Operational Analysis](images/booking-operational.png)
+![Booking & Operational Analysis](dash3.png)
 
 ## ✨ Features
 
