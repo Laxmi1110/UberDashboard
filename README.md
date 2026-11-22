@@ -100,7 +100,7 @@ Average Booking Value = AVERAGE('Uber'[Booking Value])
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/your-username/uber-dashboard.git
+   git clone https://github.com/Laxmi1011/UberDashboard.git
    ```
 2. Open `UberdashBoard.pbix` in Power BI Desktop.
 3. If prompted, update the data source path: **Home > Transform data > Data source settings**, then point it to the CSV in the `data/` folder.
