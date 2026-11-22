@@ -2,7 +2,7 @@
 
 An interactive Power BI dashboard that analyzes ~150K Uber bookings to uncover trends in ride demand, booking value, vehicle performance, cancellations, and payment behavior.
 
-dash1.png
+![Home](dash1.png)
 
 ## 📌 Overview
 
