@@ -14,7 +14,6 @@ The report has three pages:
 | **Overview** | Ride volume, distance, completed vs. lost bookings, booking value trends, and vehicle-type performance |
 | **Booking & Operational Analysis** | Customer metrics, success and cancellation rates, booking status breakdown, and payment methods |
 
-**Live report:** [Add Power BI Service link, if published](#)
 
 ## 📸 Screenshots
 
@@ -69,26 +68,39 @@ uber-dashboard/
 
 ## 🧮 DAX Measures
 
-Example measures (replace with your actual ones):
+Example measures :
 
 ```DAX
-Booking Count = COUNTROWS('Uber')
-
-Completed Bookings =
-CALCULATE([Booking Count], 'Uber'[Booking Status] = "Completed")
-
-Successful Booking Rate = DIVIDE([Completed Bookings], [Booking Count])
-
-Cancellation Rate =
+Average Booking Value = 
+AVERAGE(Uber[Booking Value])
+Average Distance = AVERAGE(Uber[Ride Distance])
+Booking Count = DISTINCTCOUNT(Uber[Booking ID])
+Booking_Value = SUM(Uber[Booking Value])
+Cancellation Rate (%) = 
 DIVIDE(
     CALCULATE(
-        [Booking Count],
-        'Uber'[Booking Status] IN { "Cancelled by Driver", "Cancelled by Customer" }
+        COUNTROWS(Uber),
+        Uber[Booking Status] IN {
+            "Cancelled by Driver",
+            "Cancelled by Customer"
+        }
     ),
-    [Booking Count]
+    COUNTROWS(Uber),
+    0
 )
-
-Average Booking Value = AVERAGE('Uber'[Booking Value])
+Completed Bookings = CALCULATE([Booking Count], Uber[Booking Status]="Completed")
+Lost Bookings = CALCULATE([Booking Count], Uber[Booking Status]<>"Completed")
+Successful Booking Rate = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS(Uber),
+        Uber[Booking Status] = "Completed"
+    ),
+    COUNTROWS(Uber),
+    0
+)
+Total Customer = DISTINCTCOUNT(Uber[Customer ID])
+Total Distance = SUM(Uber[Ride Distance])
 ```
 
 ## 🚀 Getting Started
