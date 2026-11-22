@@ -112,7 +112,7 @@ Total Distance = SUM(Uber[Ride Distance])
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/Laxmi1011/UberDashboard.git
+   git clone [https://github.com/Laxmi1011/UberDashboard.git](https://github.com/Laxmi1110/UberDashboard)
    ```
 2. Open `UberdashBoard.pbix` in Power BI Desktop.
 3. If prompted, update the data source path: **Home > Transform data > Data source settings**, then point it to the CSV in the `data/` folder.
