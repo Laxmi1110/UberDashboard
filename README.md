@@ -63,7 +63,7 @@ uber-dashboard/
 
 ## 📊 Dataset
 
-- **Source:** [Add dataset link, e.g., Kaggle](#)
+- **Source:** [Dataset-20261030T113959Z-1-001.zip](#)
 - **Size:** ~150K bookings
 - **Key fields:** booking date, booking status, vehicle type, ride distance, booking value, payment method, driver rating, customer rating
 
@@ -113,10 +113,7 @@ Average Booking Value = AVERAGE('Uber'[Booking Value])
 - Connect to a live data source for automatic refresh
 - Add driver-level performance analysis
 
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## 📬 Contact
 
-**Your Name** · [LinkedIn](#) · [GitHub](#) · your.email@example.com
+**Laxmi Gupta** · [[LinkedIn](https://www.linkedin.com/in/laxmigupta188777/)](#) · laxmigupta188777@gmail.com.com
