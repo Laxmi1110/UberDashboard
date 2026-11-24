@@ -129,4 +129,4 @@ Total Distance = SUM(Uber[Ride Distance])
 
 ## 📬 Contact
 
-**Laxmi Gupta** · [[LinkedIn](https://www.linkedin.com/in/laxmigupta188777/)](#) · laxmigupta188777@gmail.com.com
+**Laxmi Gupta** · [[LinkedIn](https://www.linkedin.com/in/laxmigupta188777/)] · laxmigupta188777@gmail.com.com
